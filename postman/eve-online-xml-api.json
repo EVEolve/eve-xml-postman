@@ -1,0 +1,991 @@
+{
+	"variables": [],
+	"info": {
+		"name": "EVE Online XML API",
+		"_postman_id": "768230ec-3f0b-06f5-a3d5-c3b7cd412da2",
+		"description": "EVE Online XML API Endpoints\n\nSee:\nhttps://eveonline-third-party-documentation.readthedocs.io/en/latest/xmlapi/index.html",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account::AccountStatus",
+			"request": {
+				"url": "https://api.eveonline.com/account/AccountStatus.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Information about a player’s EVE account like creation time, minutes spent in game etc."
+			},
+			"response": []
+		},
+		{
+			"name": "Account::APIKeyInfo",
+			"request": {
+				"url": "https://api.eveonline.com/account/APIKeyInfo.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Information about a player’s EVE account like creation time, minutes spent in game etc."
+			},
+			"response": []
+		},
+		{
+			"name": "Account::Characters",
+			"request": {
+				"url": "https://api.eveonline.com/account/Characters.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Lists all characters included in this API key."
+			},
+			"response": []
+		},
+		{
+			"name": "API::CallList",
+			"request": {
+				"url": "https://api.eveonline.com/api/CallList.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "List of all selectable API endpoints/groups to which an API grants access to."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::AccountBalance",
+			"request": {
+				"url": "https://api.eveonline.com/char/AccountBalance.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character account balance."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::AssetList",
+			"request": {
+				"url": "https://api.eveonline.com/char/AssetList.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Lists everything a character owns."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Blueprints",
+			"request": {
+				"url": "https://api.eveonline.com/char/Blueprints.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Lists blueprints in characters inventory."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Bookmarks",
+			"request": {
+				"url": "https://api.eveonline.com/char/Bookmarks.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character bookmarks."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::CalendarEventAttendees",
+			"request": {
+				"url": "https://api.eveonline.com/char/CalendarEventAttendees.xml.aspx?characterID={{character_id}}&eventID={{event_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns a list of all invited attendees for a given event."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::CharacterSheet",
+			"request": {
+				"url": "https://api.eveonline.com/char/CharacterSheet.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Character, skills and roles information."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::ChatChannels",
+			"request": {
+				"url": "https://api.eveonline.com/char/ChatChannels.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character chat channels."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Clones",
+			"request": {
+				"url": "https://api.eveonline.com/char/Clones.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve clones and basic attributes portion of character sheet."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::ContactList",
+			"request": {
+				"url": "https://api.eveonline.com/char/ContactList.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Lists the character’s personal, corporation, and alliance contacts."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::ContactNotifications",
+			"request": {
+				"url": "https://api.eveonline.com/char/ContactNotifications.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Lists the notifications received about having been added to someone’s contact list."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::ContractBids",
+			"request": {
+				"url": "https://api.eveonline.com/char/ContractBids.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve bids that have been placed on the characters auctions."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::ContractItems",
+			"request": {
+				"url": "https://api.eveonline.com/char/ContractItems.xml.aspx?characterID={{character_id}}&contractID={{contract_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Lists Items and details of a particular contract."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Contracts",
+			"request": {
+				"url": "https://api.eveonline.com/char/Contracts.xml.aspx?characterID={{character_id}}&contractID={{contract_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns available contracts to character."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::FacWarStats",
+			"request": {
+				"url": "https://api.eveonline.com/char/FacWarStats.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns faction warfare information for characters enrolled in faction warfare."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::IndustryJobs",
+			"request": {
+				"url": "https://api.eveonline.com/char/IndustryJobs.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve unfinished character industry jobs."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::IndustryJobsHistory",
+			"request": {
+				"url": "https://api.eveonline.com/char/IndustryJobsHistory.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve finished character industry jobs."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::KillMails",
+			"request": {
+				"url": "https://api.eveonline.com/char/KillMails.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve a list of character kills and deaths."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Locations",
+			"request": {
+				"url": "https://api.eveonline.com/char/Locations.xml.aspx?characterID={{character_id}}&IDs={{item_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve location and name of specific items that belong to the character / corporation of the api key. This call can be used to retrieve the player-set name of containers and ships."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::MailBodies",
+			"request": {
+				"url": "https://api.eveonline.com/char/MailBodies.xml.aspx?characterID={{character_id}}&IDs={{mail_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns the bodies of eve mail messages sent to the character."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::MailingLists",
+			"request": {
+				"url": "https://api.eveonline.com/char/MailingLists.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns the mailing list the character is a member of."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::MailMessages",
+			"request": {
+				"url": "https://api.eveonline.com/char/MailMessages.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns the header of eve mail messages sent to the character."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::MarketOrders",
+			"request": {
+				"url": "https://api.eveonline.com/char/MarketOrders.xml.aspx?characterID={{character_id}}&orderID={{order_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character Market Orders."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Medals",
+			"request": {
+				"url": "https://api.eveonline.com/char/Medals.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve a list of medals the character has."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Notifications",
+			"request": {
+				"url": "https://api.eveonline.com/char/Notifications.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character notification headers."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::NotificationTexts",
+			"request": {
+				"url": "https://api.eveonline.com/char/NotificationTexts.xml.aspx?characterID={{character_id}}&IDs={{notification_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character notification bodies."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::PlanetaryColonies",
+			"request": {
+				"url": "https://api.eveonline.com/char/PlanetaryColonies.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve planetary colonies owned by character."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::PlanetaryLinks",
+			"request": {
+				"url": "https://api.eveonline.com/char/PlanetaryLinks.xml.aspx?characterID={{character_id}}&planetID={{planet_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve planetary links for colonies owned by character."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::PlanetaryPins",
+			"request": {
+				"url": "https://api.eveonline.com/char/PlanetaryPins.xml.aspx?characterID={{character_id}}&planetID={{planet_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve planetary pins for colonies owned by character."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::PlanetaryRoutes",
+			"request": {
+				"url": "https://api.eveonline.com/char/PlanetaryRoutes.xml.aspx?characterID={{character_id}}&planetID={{planet_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve planetary routes for colonies owned by character."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Research",
+			"request": {
+				"url": "https://api.eveonline.com/char/Research.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character research."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::SkillInTraining",
+			"request": {
+				"url": "https://api.eveonline.com/char/SkillInTraining.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character skill in training."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::SkillQueue",
+			"request": {
+				"url": "https://api.eveonline.com/char/SkillQueue.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character skill queue."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Skills",
+			"request": {
+				"url": "https://api.eveonline.com/char/Skills.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve skills portion of character sheet."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::Standings",
+			"request": {
+				"url": "https://api.eveonline.com/char/Standings.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character standings."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::UpcomingCalendarEvents",
+			"request": {
+				"url": "https://api.eveonline.com/char/UpcomingCalendarEvents.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character upcoming calendar events."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::WalletJournal",
+			"request": {
+				"url": "https://api.eveonline.com/char/WalletJournal.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character wallet journal."
+			},
+			"response": []
+		},
+		{
+			"name": "Character::WalletTransactions",
+			"request": {
+				"url": "https://api.eveonline.com/char/WalletTransactions.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve character wallet transactions."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::AccountBalance",
+			"request": {
+				"url": "https://api.eveonline.com/corp/AccountBalance.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve corporation account balances."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::Bookmarks",
+			"request": {
+				"url": "https://api.eveonline.com/corp/Bookmarks.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve corporation bookmarks."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::Contracts",
+			"request": {
+				"url": "https://api.eveonline.com/corp/Contracts.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns available contracts to character."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::CorporationSheet",
+			"request": {
+				"url": "https://api.eveonline.com/corp/CorporationSheet.xml.aspx?corporationID={{corporation_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns details for a specific corporation."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::IndustryJobs",
+			"request": {
+				"url": "https://api.eveonline.com/corp/IndustryJobs.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve unfinished corporation industry jobs."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::IndustryJobsHistory",
+			"request": {
+				"url": "https://api.eveonline.com/corp/IndustryJobsHistory.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve finished corporation industry jobs."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::Locations",
+			"request": {
+				"url": "https://api.eveonline.com/corp/Locations.xml.aspx?IDs={{item_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns location of an item or character."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::MarketOrders",
+			"request": {
+				"url": "https://api.eveonline.com/corp/MarketOrders.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::MemberSecurity",
+			"request": {
+				"url": "https://api.eveonline.com/corp/MemberSecurity.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::MemberTracking",
+			"request": {
+				"url": "https://api.eveonline.com/corp/MemberTracking.xml.aspx?extended=1&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::Standings",
+			"request": {
+				"url": "https://api.eveonline.com/corp/Standings.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns the standings that non-player entities have to the corporation."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::StarbaseDetail",
+			"request": {
+				"url": "https://api.eveonline.com/corp/StarbaseDetail.xml.aspx?itemID={{pos_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns details for specified starbase."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::StarbaseList",
+			"request": {
+				"url": "https://api.eveonline.com/corp/StarbaseList.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns details for specified starbase."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::WalletJournal",
+			"request": {
+				"url": "https://api.eveonline.com/corp/WalletJournal.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve corporation wallet journal."
+			},
+			"response": []
+		},
+		{
+			"name": "Corporation::WalletTransactions",
+			"request": {
+				"url": "https://api.eveonline.com/corp/WalletTransactions.xml.aspx?keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Retrieve corporation wallet transactions."
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::AllianceList",
+			"request": {
+				"url": "https://api.eveonline.com/eve/AllianceList.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns active alliances in New Eden and their member corporations."
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::CharacterAffiliation",
+			"request": {
+				"url": "https://api.eveonline.com/eve/CharacterAffiliation.xml.aspx?ids={{character_id}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::CharacterID",
+			"request": {
+				"url": "https://api.eveonline.com/eve/CharacterID.xml.aspx?names={{character_name}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::CharacterInfo",
+			"request": {
+				"url": "https://api.eveonline.com/eve/CharacterInfo.xml.aspx?characterID={{character_id}}&keyID={{key_id}}&vCode={{vcode}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns information about the character. Has three data sets it can return depending on access mask."
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::CharacterName",
+			"request": {
+				"url": "https://api.eveonline.com/eve/CharacterName.xml.aspx?ids={{character_id}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns the names for a comma-separated list of owner IDs for characters, corporations, alliances, and so on."
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::ConquerableStationList",
+			"request": {
+				"url": "https://api.eveonline.com/eve/ConquerableStationList.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns a list of conquerable stations in New Eden."
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::ErrorList",
+			"request": {
+				"url": "https://api.eveonline.com/eve/ErrorList.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns a list of error codes and text that the API may return."
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::RefTypes",
+			"request": {
+				"url": "https://api.eveonline.com/eve/RefTypes.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns a list of transaction types used in the Corporation - WalletJournal & Character - WalletJournal."
+			},
+			"response": []
+		},
+		{
+			"name": "Eve::TypeName",
+			"request": {
+				"url": "https://api.eveonline.com/eve/TypeName.xml.aspx?ids={{type_id}}",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns the names associated with a sequence of typeIDs."
+			},
+			"response": []
+		},
+		{
+			"name": "Map::FacWarSystems",
+			"request": {
+				"url": "https://api.eveonline.com/map/FacWarSystems.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns a list of contestable solarsystems and the NPC faction currently occupying them. It should be noted that this file only returns a non-zero ID if the occupying faction is not the sovereign faction."
+			},
+			"response": []
+		},
+		{
+			"name": "Map::Jumps",
+			"request": {
+				"url": "https://api.eveonline.com/map/Jumps.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Returns the number of jumps in solar systems within the last hour, doesn’t include wormhole space. Only solar system where jumps have been made are listed, so assume zero in case the system is not listed."
+			},
+			"response": []
+		},
+		{
+			"name": "Map::Kills",
+			"request": {
+				"url": "https://api.eveonline.com/map/Kills.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Provides number of ship, pod and NPC kills per solar system within the last hour, doesn’t include wormhole space. Only solar system where kills have been made are listed, so assume zero in case the system is not listed."
+			},
+			"response": []
+		},
+		{
+			"name": "Map::Sovereignty",
+			"request": {
+				"url": "https://api.eveonline.com/map/Sovereignty.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Provides sovereignty / ownership information for solar systems in New Eden excluding wormhole space."
+			},
+			"response": []
+		},
+		{
+			"name": "Server::ServerStatus",
+			"request": {
+				"url": "https://api.eveonline.com/server/ServerStatus.xml.aspx",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "Provides status of the server up/down and the number of users logged onto the server."
+			},
+			"response": []
+		}
+	]
+}
